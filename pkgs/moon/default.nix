@@ -9,34 +9,34 @@ system ? builtins.currentSystem
 }:
 let
   shaMap = {
-    i686-linux = "0j12g3s0rkg38g36v6pknqn02j7qd8bqs5cq7g5k30hdv8dlznrd";
-    x86_64-linux = "1yzgbaggqvgb75yb7h4bb2qlkv0ljp9hmzpq2md1i872jycb2vdc";
-    armv7l-linux = "1jk7zyllql56f43afaxn9pfkykf8ssjinr5xkif7v92yc0d27n5i";
-    aarch64-linux = "0bg3gb3l6q9pcq3rqsi986g84dzcwl8dga7zp3a14frmgcrkl439";
-    x86_64-darwin = "0jgrpn0jh02iwhljdprhksy3a0mddk8isdglvm8lb4clc6q76kaq";
-    aarch64-darwin = "08lql9h9fis4kmxsvpdqyxwjnjkdak5qb1qh3kmrykxfml9wxdjh";
+    i686-linux = "0wipjd24cn1v2p9dzgd5ych35fnw25lga1sc27zvx7igc5zv2xml";
+    x86_64-linux = "0vma649cl4h5rdm8sgiamhlqvn1cz0km667krrwbyxvixmjnqp7s";
+    armv7l-linux = "1n6ndaifai8kd3fvb74icnqbc8p57panjlnwzaparwgjgig2ij1v";
+    aarch64-linux = "17wpqxabn1qjc1r4yi94kln84arbpb9xz98f23i9i1djxyjwgsxr";
+    x86_64-darwin = "0hl28q6vdrzl8z57x4c72jmba16f2sfjrlidigq109xqjnb0yc2h";
+    aarch64-darwin = "087cssxvmycjmyvi82cvhn25csymrqx4z7jdy2hnqs0s14rsq28c";
   };
 
   urlMap = {
-    i686-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_i386.tar.gz";
-    x86_64-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_x86_64.tar.gz";
-    armv7l-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_armv7.tar.gz";
-    aarch64-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_arm64.tar.gz";
-    x86_64-darwin = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Darwin_x86_64.tar.gz";
-    aarch64-darwin = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Darwin_arm64.tar.gz";
+    i686-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.2/moon_0.19.2_Linux_i386.tar.gz";
+    x86_64-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.2/moon_0.19.2_Linux_x86_64.tar.gz";
+    armv7l-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.2/moon_0.19.2_Linux_armv7.tar.gz";
+    aarch64-linux = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.2/moon_0.19.2_Linux_arm64.tar.gz";
+    x86_64-darwin = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.2/moon_0.19.2_Darwin_x86_64.tar.gz";
+    aarch64-darwin = "https://github.com/MoonForgeAI/moon/releases/download/v0.19.2/moon_0.19.2_Darwin_arm64.tar.gz";
   };
   sourceRootMap = {
-    i686-linux = "moon_0.19.1_Linux_i386";
-    x86_64-linux = "moon_0.19.1_Linux_x86_64";
-    armv7l-linux = "moon_0.19.1_Linux_armv7";
-    aarch64-linux = "moon_0.19.1_Linux_arm64";
-    x86_64-darwin = "moon_0.19.1_Darwin_x86_64";
-    aarch64-darwin = "moon_0.19.1_Darwin_arm64";
+    i686-linux = "moon_0.19.2_Linux_i386";
+    x86_64-linux = "moon_0.19.2_Linux_x86_64";
+    armv7l-linux = "moon_0.19.2_Linux_armv7";
+    aarch64-linux = "moon_0.19.2_Linux_arm64";
+    x86_64-darwin = "moon_0.19.2_Darwin_x86_64";
+    aarch64-darwin = "moon_0.19.2_Darwin_arm64";
   };
 in
 stdenvNoCC.mkDerivation {
   pname = "moon";
-  version = "0.19.1";
+  version = "0.19.2";
   src = fetchurl {
     url = urlMap.${system};
     sha256 = shaMap.${system};
