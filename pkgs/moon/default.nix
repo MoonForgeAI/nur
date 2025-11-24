@@ -9,12 +9,12 @@ system ? builtins.currentSystem
 }:
 let
   shaMap = {
-    i686-linux = "0a06rm4lgsm0vh5hm3xayxby62g4p442irgxzq9qjqw01n61gy83";
-    x86_64-linux = "1pmqlw6llgdg9c78q8c52w0g707zibbb8hy64fby592w50xwwd61";
-    armv7l-linux = "0404m82gv13ys3y7nv10b4zavkmglr8dg2xlgfrzmmz39n2h849q";
-    aarch64-linux = "17qpqrmjqmbx93dlysf8dcsmb51c9ihw6c7lcbr4xa0zj6xmr4pa";
-    x86_64-darwin = "0h5c4y57h6b5fi210lq7wi3k4k42m97nxdcj3v952qxf5jq940r5";
-    aarch64-darwin = "09znbxy0z9w0l2r2pp23f32ypn2r786wny4pr9xbfdlrdlhfknsr";
+    i686-linux = "071c9rgad2gan0gyihfphsl60amxs8zcwcsi09zwyxx0mlqcdvpz";
+    x86_64-linux = "0pvrhwm2ck3c9qyzav7nswy4jdfvrqll3jvm9f23yxj5ldhn8627";
+    armv7l-linux = "1ag2wr7m5s9djyqp5bbz2nhpd1wwdsn8hy8gb35sgna4d8lz3y3y";
+    aarch64-linux = "1ilqmvr7mzcz9wyy3n7p239b5hqaz8m45wz0rvlxm6xcv6fgisx6";
+    x86_64-darwin = "068y9bav5x65cy9wmpg6cpld14v07k149v3cbxbbp14b5zinnlzr";
+    aarch64-darwin = "0dfbzdqcnnjc9qqa48z1jakdlc5q09lfyav1spj138w92m0f7y07";
   };
 
   urlMap = {
